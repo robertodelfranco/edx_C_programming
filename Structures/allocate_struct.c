@@ -8,7 +8,6 @@ void printPoint(struct point pt);
 void readPoint(struct point * ptr);
 void printPoly(struct point *ptr, int vertices);
 int main(void) {
-    //! showMemory(start=65520)
     struct point * polygon;
     int i, num;
     printf("How many vertices does your polygon have? ");
