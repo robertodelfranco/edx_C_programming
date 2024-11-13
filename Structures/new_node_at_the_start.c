@@ -106,3 +106,4 @@ struct digit * reverseNumber(struct digit * start) {
         ptr = ptr->next;
     }
     return(bstart);
+}
