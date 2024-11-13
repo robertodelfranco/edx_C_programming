@@ -16,7 +16,6 @@ struct digit * reverseNumber(struct digit * start);
 struct digit * insertAtFront(struct digit * start, struct digit * newptr); 
 
 int main(void) {
-    //! stack = showMemory(start=65520)
     struct digit *start, *ptr, *backwards;
     printf("Please enter a number: ");
     start = readNumber();
@@ -80,7 +79,6 @@ struct digit * readNumber() {
 }
 
 struct digit * searchNumber(struct digit * start, int number) {
-    //! heap=showMemory(start=348, cursors=[ptr,start])
     struct digit * ptr = start;
     while ((ptr!=NULL) && (ptr->num!=number)) {
         ptr = ptr->next;
@@ -89,13 +87,11 @@ struct digit * searchNumber(struct digit * start, int number) {
 }
 
 struct digit * insertAtFront(struct digit * start, struct digit * newptr) {
-    //! heap=showMemory(start=348, cursors=[newptr,start])
     newptr->next = start;
     return(newptr);
 }
 
 struct digit * reverseNumber(struct digit * start) {
-    //! heap=showMemory(start=336, cursors=[ptr,start,bstart,newdigit])
     struct digit *ptr = start;
     struct digit *bstart = NULL;
     struct digit *newdigit;
