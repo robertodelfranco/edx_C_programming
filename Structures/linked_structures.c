@@ -7,7 +7,6 @@ struct point{
 };
 void printPoints(struct point *start);
 int main(void) {
-    //! showMemory(start=65520)
     struct point pt1 = {1, 2, NULL};
     struct point * start;
     struct point pt2 = {-2, 3, NULL};
@@ -23,7 +22,6 @@ int main(void) {
 }
 
 void printPoints(struct point *start) {
-    //! showMemory(start = 65520, cursors=[ptr])
     struct point * ptr;
     ptr = start;
     while (ptr!=NULL) {
