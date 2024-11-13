@@ -10,7 +10,6 @@ struct point * createPoint(int x, int y) ;
 struct point * append (struct point * end, struct point * newpt);
 void freePoints(struct point * start);
 int main(void) {
-    //! showMemory(start=65520)
     struct point * start, * end, * newpt;
     int num, i;
     int x, y;
